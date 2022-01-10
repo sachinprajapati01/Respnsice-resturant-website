@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+.navbar{
+    display: flex;
+    height: 109px; 
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    position: fixed;
+}
+.logo{
+    margin: 20px 10px;
+}
+.logo img{
+    width: 100px;
+    height: 90px;
+}
+.navbar ul{
+    display: flex;
+    font-size: 1.5rem;
+    list-style: none;
+}
+.navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 3px 30px;
+    border-radius: 15px;
+}
+.navbar ul li a:hover{
+    color:black ;
+    background-color: white;
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+#home{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 470px;
+    padding: 100px 200px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.primary{
+    font-size: 2.5rem;
+    padding: 18px 3px;
+    width: 600px    ;
+}
+#home p{
+    font-size: 1.2rem;
+    padding: 9px 2px;
+}
+#home::before{
+    content: "";
+    background:url(bg3.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+.btn{
+    padding: 4px 14px;
+    margin-top: 13px;
+    height: 38px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+.pri1{
+    font-size: 2.5rem;
+    padding: 12px;
+    text-align: center;
+    
+}
+.pri2{
+    font-size: 1.2rem;
+    padding: 12px;
+    text-align: center;
+}
+.service{
+    display: flex;
+    margin: 30px 20px;
+    
+    justify-content: center;
+}
+.box{
+    border:2px solid grey;
+    background-color: rgb(227, 231, 227);
+    border-radius: 28px;
+    padding: 8px;
+    margin: 8px;
+}
+.box img{
+    height:100px;
+    display: block;
+    margin: auto;
+
+}
+.text{
+    text-align: center;
+}
+.client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.client img{
+    padding: 3px 20px;
+}
